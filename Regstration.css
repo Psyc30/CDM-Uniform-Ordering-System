@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh 
+}
+
+.container{
+    display: flex;
+    width: 600px;
+    margin: 80px auto;
+}
+
+.form-1{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 440px;
+    border: 2px solid black;
+    border-right: none;
+    border-radius: 15px 0 0 15px;
+    background:linear-gradient(to right, rgba(13, 158, 3, 0.623), rgba(255, 255, 255, 0)), url("./imgs/Login_&_Registration_Imgs/CDM_new_building.jpg");
+    background-position: center;
+}
+
+.cdm-seal{
+    display: block;
+    margin: 100px auto 0;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 100px;
+    background-color: black;
+}
+
+.login-redirect{
+    display: block;
+    margin: 35px auto;
+    width: 60%;
+    height: 80px;
+    border-radius: 7px;
+    border: 1px solid  #388e3c;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+p{
+    font-size: 15px;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+.login{
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    padding-top: 5px;
+    width: 120px;
+    height: 20px;
+    border-radius: 100px;
+    border: 2px solid #388E3C;
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+}
+
+
+.form-2{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 440px;
+    border: 2px solid black;
+    border-radius: 0 15px 15px 0;
+    background-color: rgb(250, 250, 250);
+}
+
+h2{
+    text-align: center;
+    margin: 30px 0 20px;
+    font-size: 40px;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    width: 70%;
+    height: 25px;
+    text-indent: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(223, 220, 220);
+    border-radius: 3px;
+}
+
+input:focus{
+    outline: 1px auto #388E3C;
+}
+
+
+::placeholder{
+    text-indent: 5px;
+    color: #000;
+}
+
+.agreement-container{
+    display: flex;
+}
+
+input[type="checkbox"]{
+    margin: 0 10px 10px 70px;
+    height: 15px;
+    width: 15px;
+    accent-color: #388e3c;
+}
+
+button{
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #388E3C;
+    border-radius: 20px;
+    font-weight: 900;
+}
+
