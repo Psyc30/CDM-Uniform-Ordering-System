@@ -37,7 +37,17 @@ header > h1{
 }
 
 .header2{
-    margin: 20px;
+    display: block;
+    margin: 20px auto;
+    padding: 5px 0 0;
+    width: 80%;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 5px;
+    border: 1px solid black;
+
 }
 
 .container{
@@ -45,13 +55,17 @@ header > h1{
     width: 100%;
     height: fit-content;
     margin: 0 auto;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .product-section{
     display: block;
     height: fit-content;
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
 }
 
 .product-section2{
@@ -59,15 +73,15 @@ header > h1{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    border: 4px solid purple;
 }
 
 .products{
     display: block;
     margin: 15px auto;
-    width: 300px;
+    width: 270px;
     border: 1px solid black;
-    border-radius:20px;
+    border-radius:3px;
+    background-color: white;
 }
 
 .uniform{
@@ -78,35 +92,106 @@ header > h1{
 .uniform > img{
     display: block;
     margin: 10px auto;
-    width: 230px;
-    height: 230px;
-    border-radius: 20px;
-    border: 2px solid red;
+    width: 180px;
+    height: 180px;
+    border-radius: 3px;
 }
 
 .description{
     width: 100%;
-    height: 200px;
+    height: 270px;
     text-align: center;
 }
 
+.productname{
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0 0;
+    width: 150px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: yellowgreen;
+}
+
+.size{
+    margin: 10px 0 0;
+}
+
+.sizes button{
+    margin: 5px 1px 0;
+    width: 35px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.Quantity{
+    display: block;
+    margin: 20px auto 10px;
+}
+
+input[type="number"]{
+    text-indent: 25px;
+    width: 60px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.price-display{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 20px;
+    width: 100px;
+    border-radius: 3px;
+}
+
+.add-cart{
+    margin: 20px 0 0;
+    width: 120px;
+    height: 30px;
+    border: none;
+    font-weight: 900;
+    border-radius: 20px;
+    background-color: yellowgreen;
+}
+
 .total-item-section{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin: 20px auto;
     height: 500px;
-    width: 20%;
-    border: 4px solid red;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 5px;
+    
 }
 
 .subsection1{
-    border: 2px solid blue;
-    width: 100%;
+    display: block;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 90%;
     margin: 20px auto;
     height: 100px;
 }
 
 .subsection2{
-    border: 2px solid blue;
+    border: 2px solid black;
+    border-radius: 5px;
     margin: 20px auto;
-    width: 100%;
+    width: 90%;
     height: 300px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #388E3C;
+    text-align: center;
 }
 
