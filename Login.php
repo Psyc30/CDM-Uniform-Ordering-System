@@ -12,7 +12,7 @@
 <body>
 
     <div id="container" class="container">
-        <form action="./Homepage.html" class="form-1" >
+        <form action="./Homepage.php" class="form-1" >
 
             <h2>Welcome!</h2>
             
@@ -26,7 +26,7 @@
 
             <div class="signup-redirect">
                 <p>Not Yet Registered?</p>
-                <a href="./Registration.html" class="signup">Sign Up</a>
+                <a href="./Registration.php" class="signup">Sign Up</a>
             </div>
 
         </form>

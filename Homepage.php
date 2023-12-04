@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Homepage.css">
     <link rel="shortcut icon" href="./imgs/Login_&_Registration_Imgs/The_Colegio_de_Montalban_Seal.png" type="image/x-icon">
-    <script src="./Homepage.js"></script>
-    
+    <script defer src="./Homepage.js"></script>
     <title>CDM Uniform Ordering System</title>
 </head>
 
@@ -43,8 +42,11 @@
                         </div>
 
                         <div class="Quantity">
-                            <label for="">Quantity:</label>
-                            <input type="number" min="0" max="5">
+                            <label for="" class="quantilabel">Quantity</label>
+                           <label for="" class="counter" id="counter">0</label> 
+                           <button type="button" id="decrement">-</button>
+                           <button type="button" id="reset">reset</button>
+                           <button type="button" id="increment">+</button>
                         </div>
                         
                         <div class="price">
@@ -74,8 +76,11 @@
                         </div>
 
                         <div class="Quantity">
-                            <label for="">Quantity:</label>
-                            <input type="number" min="0" max="5">
+                            <label for="" class="quantilabel">Quantity</label>
+                           <label for="" class="counter" id="counter">0</label> 
+                           <button type="button" id="decrement">-</button>
+                           <button type="button" id="reset">reset</button>
+                           <button type="button" id="increment">+</button>
                         </div>
                         
                         <div class="price">
@@ -105,8 +110,11 @@
                         </div>
 
                         <div class="Quantity">
-                            <label for="">Quantity:</label>
-                            <input type="number" min="0" max="5">
+                            <label for="" class="quantilabel">Quantity</label>
+                           <label for="" class="counter" id="counter">0</label> 
+                           <button type="button" id="decrement">-</button>
+                           <button type="button" id="reset">reset</button>
+                           <button type="button" id="increment">+</button>
                         </div>
                         
                         <div class="price">
@@ -136,8 +144,11 @@
                         </div>
 
                         <div class="Quantity">
-                            <label for="">Quantity:</label>
-                            <input type="number" min="0" max="5">
+                            <label for="" class="quantilabel">Quantity</label>
+                           <label for="" class="counter" id="counter">0</label> 
+                           <button type="button" id="decrement">-</button>
+                           <button type="button" id="reset">reset</button>
+                           <button type="button" id="increment">+</button>
                         </div>
                         
                         <div class="price">
@@ -167,8 +178,11 @@
                         </div>
 
                         <div class="Quantity">
-                            <label for="">Quantity:</label>
-                            <input type="number" min="0" max="5">
+                            <label for="" class="quantilabel">Quantity</label>
+                           <label for="" class="counter" id="counter">0</label> 
+                           <button type="button" id="decrement">-</button>
+                           <button type="button" id="reset">reset</button>
+                           <button type="button" id="increment">+</button>
                         </div>
                         
                         <div class="price">
@@ -188,10 +202,12 @@
                     <form class="description">
                         <h3 class="productname">CDM I.D LACE</h3>
                         
-
-                        <div class="Quantity adjust">
-                            <label for="">Quantity:</label>
-                            <input type="number" min="0" max="5">
+                        <div class="Quantity">
+                            <label for="" class="quantilabel">Quantity</label>
+                           <label for="" class="counter" id="counter">0</label> 
+                           <button type="button" id="decrement">-</button>
+                           <button type="button" id="reset">reset</button>
+                           <button type="button" id="increment">+</button>
                         </div>
                         
                         <div class="price">
@@ -278,7 +294,7 @@
             
         </section>
     </div>
-    <footer></footer>
-
+    <footer>
+    </footer>
 </body>
 </html>

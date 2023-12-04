@@ -1,3 +1,9 @@
+<?php
+
+include ("./connection.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +22,7 @@
             <img class="cdm-seal" src="./imgs/Login_&_Registration_Imgs/The_Colegio_de_Montalban_Seal.png" alt="Colegio De Montalban Seal">
 
             <div class="login-redirect">
-                <a href="./Login.html" class="login">LOGIN</a>
+                <a href="./Login.php" class="login">LOGIN</a>
             </div>
 
         </form>
