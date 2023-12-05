@@ -47,7 +47,6 @@ header > h1{
     background-color: yellow;
     border: 1px solid rgb(155, 155, 155);
     border-radius: 5px;
-    
 }
 
 .container{
@@ -129,7 +128,12 @@ header > h1{
 
 .Quantity{
     display: block;
-    margin: 10px auto 5px;
+    margin: 20px auto 10px;
+}
+
+::placeholder{
+    font-weight: bold;
+    color: black;
 }
 
 input[type="number"]{
@@ -143,39 +147,6 @@ input[type="number"]{
     outline: none;
 }
 
-.quantilabel{
-    display: block;
-    margin-bottom: 5px;
-}
-
-.counter{
-    display: block;
-    margin: 0 auto;
-    width: 105px;
-    background-color: rgb(216, 214, 214);
-}
-
-#increment, #decrement{
-    cursor: pointer;
-    font-weight: bolder;
-    margin: 5px auto;
-    width: 30px;
-    height: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: yellowgreen;
-}
-
-#reset{
-    cursor: pointer;
-    font-weight: bolder;
-    width: 35px;
-    height: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: yellowgreen;
-}
-
 .price-display{
     display: block;
     margin: 0 auto;
@@ -184,6 +155,7 @@ input[type="number"]{
     background-color: rgb(216, 214, 214);
     height: 20px;
     width: 100px;
+    font-weight: bold;
 }
 
 .add-cart{
@@ -247,54 +219,38 @@ input[type="number"]{
 
 #cart{
     text-align: center;
-    margin: 20px auto;
+    margin: 20px auto 10px;
 }
 
-.mycart, .cart-label{
-    margin: 5px auto;
-    width: 90%;
-}
-
-.mycart-products, .mycart-products-label{
-    display: inline-block;
+table{
+    display: block;
     margin: 0 auto;
-    width: 100%;
-    
+    width: 320px;
+    height: 200px;
 }
 
-.mycart-products-label > label{
-    display: inline-block;
-    width: 120px;
-    height: 20px;
+.table-label, .polo, .blouse, .slacks, .PEshirt, .PEpants, .IDlace{
+    margin: 0 auto;
+    border: 1px solid red;
+    width: 300px;
+}
+
+ td{
+    width: 100px;
+    height: 27px;
+    border-radius: 3px;
+    border: 1px solid green;
     text-align: center;
 }
 
-.mycart-products > label{
-    display: inline-block;
-    width: 120px;
-}
-
-.item-price-h, .quanti-h, .x-button-h{
-    display: inline-block;
-    width: 60px;
-    height: 20px;
-    margin: 5px auto 0;
-    text-align: center;
-}
-
-.item-price, .quanti, .x-button{
-    display: inline-block;
-    width: 60px;
-    height: 20px;
-    margin: 5px auto 0 ;
-    background-color: rgb(216, 214, 214);
-    border-radius: 5px;
+td > button{
+    width: 50px;
 }
 
 .buy-button{
     cursor: pointer;
     display: block;
-    margin: 20px auto 0;
+    margin: 30px auto 0;
     width: 120px;
     height: 30px;
     border: none;
