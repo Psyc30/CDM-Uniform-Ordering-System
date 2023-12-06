@@ -45,8 +45,16 @@ header > h1{
     font-size: 30px;
     text-align: center;
     background-color: yellow;
-    border: 1px solid rgb(155, 155, 155);
+    border: 1px solid black;
     border-radius: 5px;
+}
+
+.whitebar{
+    display: block;
+    width: inherit;
+    height: 30px;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
 }
 
 .container{
@@ -78,7 +86,7 @@ header > h1{
     width: 270px;
     border-radius:5px;
     background-color: white;
-    border: 1px solid rgb(155, 155, 155);
+    border: 1px solid black;
 }
 
 .uniform{
@@ -126,6 +134,12 @@ header > h1{
     border: 2px solid yellowgreen;
 }
 
+.sizes button:hover {
+    background-color: green;
+    border: 2px solid green;
+    color: white;
+}
+
 .Quantity{
     display: block;
     margin: 20px auto 10px;
@@ -151,6 +165,7 @@ input[type="number"]{
     display: block;
     margin: 0 auto;
     border: none;
+    padding-top: 3px;
     border-radius: 5px;
     background-color: rgb(216, 214, 214);
     height: 20px;
@@ -163,10 +178,17 @@ input[type="number"]{
     margin: 15px 0 0;
     width: 120px;
     height: 30px;
-    border: none;
+    border: 2px solid white;
     font-weight: 900;
     border-radius: 20px;
     background-color: yellowgreen;
+    transition: transform 0.3s ease;
+}
+
+.add-cart:hover, .logout:hover, .buy-button:hover{
+    background-color:green;
+    color: white;
+    transform: scale(1.1);
 }
 
 .adjust{
@@ -179,14 +201,14 @@ input[type="number"]{
     top: 0;
     z-index: 1;
     margin: 0 10px;
-    height: 450px;
+    height: 500px;
     width: 30%;
     border-radius: 5px;
 }
 
 .subsection1{
     display: block;
-    border: 1px solid rgb(155, 155, 155);
+    border: 1px solid black;
     border-radius: 5px;
     width: 90%;
     margin: 20px auto;
@@ -194,23 +216,37 @@ input[type="number"]{
     background-color: white;
 }
 
-.studentname{
-    display: block;
-    margin: 20px 10px 10px;
-    font-size: 17px;
-    font-weight: 900;
+.subsection1 > :first-child{
+    margin: 10px 0 0 0;
 }
 
-.studentno{
-    display: block;
-    margin: 20px 10px 10px;
-    font-weight: 900;
+.infolabel{
+    font-weight: bolder;
 }
 
+.inlinelabel{
+    display: inline-block;
+    margin: 3px auto 1px;
+    padding: 0 10px;
+    width: 90%;
+}
+
+.logout{
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bolder;
+    background-color: yellowgreen;
+    transition: transform 0.3s ease;
+}
 
 .subsection2{
     border-radius: 5px;
-    border: 1px solid rgb(155, 155, 155);
+    border: 1px solid black;
     margin: 20px auto;
     width: 90%;
     height: 340px;
@@ -220,6 +256,11 @@ input[type="number"]{
 #cart{
     text-align: center;
     margin: 20px auto 10px;
+}
+
+.datalabel{
+    background-color: yellowgreen;
+    font-weight: bolder;
 }
 
 table{
@@ -235,28 +276,50 @@ table{
     width: 300px;
 }
 
- td{
+#clear1,#clear2,#clear3,#clear4,#clear5,#clear6 {
+    background-color: white;
+}
+
+td{
     width: 100px;
-    height: 27px;
+    height: 25px;
+    margin: 0 auto;
     border-radius: 3px;
-    border: 1px solid green;
+    background-color: rgb(216, 214, 214);
     text-align: center;
 }
 
 td > button{
+    cursor: pointer;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.tablelabels{
+    background-color: yellow;
+}
+
+.clear{
     width: 50px;
+}
+
+.clearbtn{
+    width: 50px;
+    background-color: white;
 }
 
 .buy-button{
     cursor: pointer;
     display: block;
     margin: 30px auto 0;
-    width: 120px;
-    height: 30px;
+    width: 70px;
+    height: 25px;
     border: none;
     font-weight: 900;
     border-radius: 20px;
     background-color: yellowgreen;
+    transition: transform 0.3s ease;
 }
 
 footer{

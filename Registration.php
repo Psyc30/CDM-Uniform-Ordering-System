@@ -29,12 +29,11 @@ include ("./connection.php");
         <form action="" class="form-2">
 
             <h2>Register Now!</h2>
-            <input type="text" placeholder="First Name" required>
-            <input type="text" placeholder="Last Name" required>
-            <input type="text" placeholder="Middle Name">
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Course" required>
+            <input type="text" placeholder="Student ID" required>
             <input type="text" placeholder="Address" required>
             <input type="text" placeholder="Cellphone Number" required> 
-            <input type="text" placeholder="Student ID" required>
             <input type="email" placeholder="Email" required>
 
             <div class="agreement-container">

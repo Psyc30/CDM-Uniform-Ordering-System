@@ -36,7 +36,7 @@ body{
     height: 440px;
     border-radius: 0 10px 10px 0;
     border: 2px solid black;
-    background:linear-gradient(to top, rgba(13, 158, 3, 0.39), rgba(255, 255, 255, 0)), url("./imgs/Login_&_Registration_Imgs/male_model.jpg");
+    background:linear-gradient(to top, rgba(13, 158, 3, 0.25), rgba(255, 255, 255, 0)), url("./imgs/Login_&_Registration_Imgs/models.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;

@@ -235,3 +235,5 @@ document.getElementById("clear6").onclick = function(){
     document.getElementById("lace-quanti").innerHTML = "";
     document.getElementById("lace-price").innerHTML = "";
 }
+   
+

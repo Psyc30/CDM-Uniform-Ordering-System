@@ -17,7 +17,7 @@
       
        <h1>Colegio De Montalban Uniform Ordering System</h1>
     </header>
-
+    <div class="whitebar"></div>
 
     <div class="container">
 
@@ -210,10 +210,22 @@
         <section class="total-item-section">
 
             <section class="subsection1">
-                <label for="" class="studentname">Student Name: </label>
-                <p></p>
-                <label for="" class="studentno">Student No.:</label>
-                <p></p>
+                <div class="inlinelabel">
+                    <label for="" class="infolabel">Student's Name:</label>
+                    <label for="">Geanga, John Irvin C.</label>
+                </div>
+
+                <div class="inlinelabel">
+                    <label for="" class="infolabel">Student No.:</label>
+                    <label for="">22-00396</label>
+                </div>
+
+                <div class="inlinelabel">
+                    <label for="" class="infolabel">Course:</label>
+                    <label for="">BSIT</label>
+                </div>
+
+                <button type="button" class="logout">LOGOUT</button>
             </section>
 
             <form action="" class="subsection2">
@@ -221,53 +233,53 @@
 
                 <table>
                     <tr class="table-label">
-                        <td>Item</td>
-                        <td>Quantity</td>
-                        <td>Size</td>
-                        <td>Price</td>
-                        <td>Clear</td>
+                        <td class="tablelabels">Item</td>
+                        <td class="tablelabels">Quantity</td>
+                        <td class="tablelabels">Size</td>
+                        <td class="tablelabels">Price</td>
+                        <td class="clear tablelabels">Clear</td>
                     </tr>
                     <tr class="polo">
-                        <td>Polo</td>
+                        <td class="datalabel">Polo</td>
                         <td id="polo-quanti"></td>
                         <td id="polo-size"></td>
                         <td id="polo-price"></td>
-                        <td><button type="button" id="clear1"><i class="fa-solid fa-trash"></i></button></td>
+                        <td class="clearbtn"><button type="button" id="clear1">X</button></td>
                     </tr>
                     <tr class="blouse">
-                        <td>Blouse</td>
+                        <td class="datalabel">Blouse</td>
                         <td id="blouse-quanti"></td>
                         <td id="blouse-size"></td>
                         <td id="blouse-price"></td>
-                        <td><button type="button" id="clear2"><i class="fa-solid fa-trash"></i></button></td>
+                        <td class="clearbtn"><button type="button" id="clear2">X</button></td>
                     </tr>
                     <tr class="slacks">
-                        <td>Slacks</td>
+                        <td class="datalabel">Slacks</td>
                         <td id="slacks-quanti"></td>
                         <td id="slacks-size"></td>
                         <td id="slacks-price"></td>
-                        <td><button type="button" id="clear3"><i class="fa-solid fa-trash"></i></button></td>
+                        <td class="clearbtn"><button type="button" id="clear3">X</button></td>
                     </tr>
                     <tr class="PEshirt">
-                        <td>P.E Shirt</td>
+                        <td class="datalabel">P.E Shirt</td>
                         <td id="PEshirt-quanti"></td>
                         <td id="PEshirt-size"></td>
                         <td id="PEshirt-price"></td>
-                        <td><button type="button" id="clear4"><i class="fa-solid fa-trash"></i></button></td>
+                        <td class="clearbtn"><button type="button" id="clear4">X</button></td>
                     </tr>
                     <tr class="PEpants">
-                        <td>P.E Pants</td>
+                        <td class="datalabel">P.E Pants</td>
                         <td id="PEpants-quanti"></td>
                         <td id="PEpants-size"></td>
                         <td id="PEpants-price"></td>
-                        <td><button type="button" id="clear5"><i class="fa-solid fa-trash"></i></button></td>
+                        <td class="clearbtn"><button type="button" id="clear5">X</button></td>
                     </tr>
                     <tr class="IDlace">
-                        <td>ID Lace</td>
+                        <td class="datalabel">ID Lace</td>
                         <td id="lace-quanti"></td>
                         <td></td>
                         <td id="lace-price"></td>
-                        <td><button type="button" id="clear6"><i class="fa-solid fa-trash"></i></button></td>
+                        <td class="clearbtn"><button type="button" id="clear6">X</button></td>
                     </tr>
                 </table>
                 <button type="submit" class="buy-button">BUY</button>
