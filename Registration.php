@@ -1,5 +1,4 @@
 <?php
-
 include ("./connection.php");
 ?>
 
@@ -11,6 +10,7 @@ include ("./connection.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Registration.css">
     <link rel="shortcut icon" href="./imgs/Login_&_Registration_Imgs/The_Colegio_de_Montalban_Seal.png" type="image/x-icon">
+    <script src="./Registration.js"></script>
     <title>CDM|Registration</title>
 </head>
 
@@ -26,15 +26,15 @@ include ("./connection.php");
             </div>
 
         </form>
-        <form action="" class="form-2">
+        <form action="" class="form-2" method="post" onsubmit="return registrationvalidation()">
 
             <h2>Register Now!</h2>
-            <input type="text" placeholder="Full Name" required>
-            <input type="text" placeholder="Course" required>
-            <input type="text" placeholder="Student ID" required>
-            <input type="text" placeholder="Address" required>
-            <input type="text" placeholder="Cellphone Number" required> 
-            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Full Name" id="fullname">
+            <input type="text" placeholder="Course" id="course">
+            <input type="text" placeholder="Student Number" id="studentno">
+            <input type="text" placeholder="Address" id="address">
+            <input type="text" placeholder="Cellphone Number" id="cellnumber"> 
+            <input type="email" placeholder="Email" id="email">
 
             <div class="agreement-container">
                 <input type="checkbox" name="agreement" id="agreement" required>
@@ -46,6 +46,6 @@ include ("./connection.php");
     </div>
 
     <footer></footer>
-
+    <script src="./Registration.js"></script>
 </body>
 </html>
