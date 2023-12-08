@@ -1,18 +1,20 @@
 <?php
 // Database credentials
+function connection(){
 $host = "localhost";
 $username = "root";
 $password = "";
 $dbname = "cdmuniformorderingsystem";
 
 // Create connection
-$conn = new mysqli($host, $username, $password, $dbname);
+$con = new mysqli($host, $username, $password, $dbname);
 
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    if ($con->connect_error) {
+        echo $con->connect_error;
+    }else{
+        return $con;
+    }
 }
 
-// Close connection when done
-$conn->close();
 ?>

@@ -1,7 +1,33 @@
 <?php
-include ("./connection.php");
-?>
+if(!isset($_SESSION)){
+    session_start();
+}
+include("./connection.php");
+$con = connection();
 
+if(isset($_POST["btnSignUp"])){
+
+    $fullname = $_POST['fullname'];
+    $course = $_POST['course'];
+    $studentno = $_POST['studentno'];
+    $address = $_POST['address'];
+    $cellnumber = $_POST['cellnumber'];
+    $email = $_POST['email'];
+
+    $sql = "INSERT INTO `userinfo`(`fullname`,  `course`, `studentnumber`, `address`, `cellnumber`, `email`) VALUES('$fullname', '$course','$studentno','$address','$cellnumber','$email')";
+    $result = mysqli_query($con,$sql);
+
+    if($sql){
+        echo"<script>
+         alert('Successfully Registered')
+         window.location = 'Login.php'
+         </script>";
+    }
+    else{
+        echo "Invalid Registration".mysqli_error($con);
+    }
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,19 +55,19 @@ include ("./connection.php");
         <form action="" class="form-2" method="post" onsubmit="return registrationvalidation()">
 
             <h2>Register Now!</h2>
-            <input type="text" placeholder="Full Name" id="fullname">
-            <input type="text" placeholder="Course" id="course">
-            <input type="text" placeholder="Student Number" id="studentno">
-            <input type="text" placeholder="Address" id="address">
-            <input type="text" placeholder="Cellphone Number" id="cellnumber"> 
-            <input type="email" placeholder="Email" id="email">
+            <input type="text" placeholder="Full Name" id="fullname" name="fullname">
+            <input type="text" placeholder="Course" id="course" name="course">
+            <input type="text" placeholder="Student Number" id="studentno" name="studentno">
+            <input type="text" placeholder="Address" id="address" name="address">
+            <input type="text" placeholder="Cellphone Number" id="cellnumber" name="cellnumber"> 
+            <input type="email" placeholder="Email" id="email" name="email">
 
             <div class="agreement-container">
                 <input type="checkbox" name="agreement" id="agreement" required>
                 <label for=""><a href="">Terms & Conditions</a></label>
             </div>
 
-            <button type="submit">SIGN UP</button>
+            <button type="submit" name="btnSignUp">SIGN UP</button>
         </form>
     </div>
 

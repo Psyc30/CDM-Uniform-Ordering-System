@@ -102,6 +102,10 @@ input:focus{
     color: #000;
 }
 
+::placeholder:focus{
+    color: none;
+}
+
 .agreement-container{
     display: flex;
 }
