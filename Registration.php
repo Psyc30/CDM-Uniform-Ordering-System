@@ -63,7 +63,7 @@ if(isset($_POST["btnSignUp"])){
             <input type="email" placeholder="Email" id="email" name="email">
 
             <div class="agreement-container">
-                <input type="checkbox" name="agreement" id="agreement" required>
+                <input type="checkbox" name="agreement" id="showpass" required>
                 <label for=""><a href="">Terms & Conditions</a></label>
             </div>
 

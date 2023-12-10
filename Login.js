@@ -9,3 +9,12 @@ function loginvalidation(){
     }
     return true;
 }
+
+function togglePassword(){
+
+    let password = document.getElementById("password");
+    let showPassword = document.getElementById("toggle");
+
+    password.type = showPassword.checked ? "text" : "password";
+
+}

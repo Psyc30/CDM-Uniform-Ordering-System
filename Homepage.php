@@ -1,3 +1,51 @@
+<?php
+if(!isset($_SESSION)){
+    session_start();
+}
+include("./connection.php");
+$con = connection();
+
+if(isset($_POST["btnBuy"])){
+
+    $polo = $_POST['poloquantity'];
+    $blouse = $_POST['blousequantity'];
+    $slacks = $_POST['slacksquantity'];
+    $peshirt = $_POST['peshirtquantity'];
+    $pepants = $_POST['pepantsquantity'];
+    $lace = $_POST['lacequantity'];
+    $polosize = $_POST['polosize'];
+    $blousesize = $_POST['blousesize'];
+    $slackssize = $_POST['slackssize'];
+    $peshirtsize = $_POST['peshirtsize'];
+    $pepantssize = $_POST['pepantssize'];
+    $poloprice = $_POST['poloprice'];
+    $blouseprice = $_POST['blouseprice'];
+    $slacksprice = $_POST['slacksprice'];
+    $peshirtprice = $_POST['peshirtprice'];
+    $pepantsprice = $_POST['pepantprice'];
+    $laceprice = $_POST['laceprice'];
+
+    $sql = "INSERT INTO `productorders`(`polo`, `blouse`, `slacks`, `peshirt`, `pepants`, `lace`, `polosize`, `blousesize`, `slackssize`, `peshirtsize`, `pepantssize`, `poloprice`, `blouseprice`, `slacksprice`, `peshirtprice`, `pepantsprice`, `laceprice`) VALUES ('$polo', '$blouse', '$slacks', '$peshirt', '$pepants', '$lace', '$polosize',  '$blousesize', '$slackssize', '$peshirtsize', '$pepantssize', '$poloprice', '$blouseprice', '$slacksprice','$peshirtprice', '$pepantsprice', '$laceprice')";
+    $result = mysqli_query($con,$sql);
+
+    if($sql){
+        "<script>
+         alert('Thank you for your Purchase!');
+         </script>";
+    }
+    else{
+        echo "Transaction Failed!".mysqli_error($con);
+    }
+
+    if(!isset($_SESSION['user'])){
+        header("Location: Login.php");
+        exit();
+    }
+
+}
+
+?> 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +53,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Homepage.css">
     <link rel="shortcut icon" href="./imgs/Login_&_Registration_Imgs/The_Colegio_de_Montalban_Seal.png" type="image/x-icon">
-    <script defer src="./Homepage.js"></script>
     <script src="https://kit.fontawesome.com/23c655eb58.js" crossorigin="anonymous"></script>
     <title>CDM Uniform Ordering System</title>
 </head>
@@ -211,24 +258,15 @@
 
             <section class="subsection1">
                 <div class="inlinelabel">
-                    <label for="" class="infolabel">Student's Name:</label>
-                    <label for="">Geanga, John Irvin C.</label>
+                    <label for="" class="infolabel">Welcome CDM Student!</label>
                 </div>
 
-                <div class="inlinelabel">
-                    <label for="" class="infolabel">Student No.:</label>
-                    <label for="">22-00396</label>
-                </div>
+                
 
-                <div class="inlinelabel">
-                    <label for="" class="infolabel">Course:</label>
-                    <label for="">BSIT</label>
-                </div>
-
-                <button type="button" class="logout">LOGOUT</button>
+                <a class="logout" href="Logout.php">Logout</a>
             </section>
 
-            <form action="" class="subsection2">
+            <form action="" class="subsection2" method="POST">
                 <h2 id="cart">CART</h2>
 
                 <table>
@@ -241,54 +279,72 @@
                     </tr>
                     <tr class="polo">
                         <td class="datalabel">Polo</td>
-                        <td id="polo-quanti"></td>
-                        <td id="polo-size"></td>
-                        <td id="polo-price"></td>
+                        <td id="polo-quanti" name="poloquantity"></td>
+                        <td id="polo-size" name="polosize"></td>
+                        <td id="polo-price" name="poloprice"></td>
                         <td class="clearbtn"><button type="button" id="clear1">X</button></td>
                     </tr>
                     <tr class="blouse">
                         <td class="datalabel">Blouse</td>
-                        <td id="blouse-quanti"></td>
-                        <td id="blouse-size"></td>
-                        <td id="blouse-price"></td>
+                        <td id="blouse-quanti" name="blousequantity"></td>
+                        <td id="blouse-size" name="blousesize"></td>
+                        <td id="blouse-price" name="blouseprice"></td>
                         <td class="clearbtn"><button type="button" id="clear2">X</button></td>
                     </tr>
                     <tr class="slacks">
                         <td class="datalabel">Slacks</td>
-                        <td id="slacks-quanti"></td>
-                        <td id="slacks-size"></td>
-                        <td id="slacks-price"></td>
+                        <td id="slacks-quanti" name="slacksquantity"></td>
+                        <td id="slacks-size" name="slackssize"></td>
+                        <td id="slacks-price" name="slacksprice"></td>
                         <td class="clearbtn"><button type="button" id="clear3">X</button></td>
                     </tr>
                     <tr class="PEshirt">
                         <td class="datalabel">P.E Shirt</td>
-                        <td id="PEshirt-quanti"></td>
-                        <td id="PEshirt-size"></td>
-                        <td id="PEshirt-price"></td>
+                        <td id="PEshirt-quanti" name="peshirtquantity"></td>
+                        <td id="PEshirt-size" name="peshirtsize"></td>
+                        <td id="PEshirt-price" name="peshirtprice"></td>
                         <td class="clearbtn"><button type="button" id="clear4">X</button></td>
                     </tr>
                     <tr class="PEpants">
                         <td class="datalabel">P.E Pants</td>
-                        <td id="PEpants-quanti"></td>
-                        <td id="PEpants-size"></td>
-                        <td id="PEpants-price"></td>
+                        <td id="PEpants-quanti" name="pepantsquantity"></td>
+                        <td id="PEpants-size" name="pepantssize"></td>
+                        <td id="PEpants-price" name="pepantprice"></td>
                         <td class="clearbtn"><button type="button" id="clear5">X</button></td>
                     </tr>
                     <tr class="IDlace">
                         <td class="datalabel">ID Lace</td>
-                        <td id="lace-quanti"></td>
+                        <td id="lace-quanti" name="lacequantity"></td>
                         <td></td>
-                        <td id="lace-price"></td>
+                        <td id="lace-price" name="laceprice"></td>
                         <td class="clearbtn"><button type="button" id="clear6">X</button></td>
                     </tr>
                 </table>
-                <button type="submit" class="buy-button">BUY</button>
-            </form>
+                <input type="text" class="hidden" id="data1" name="poloquantity">
+                <input type="text" class="hidden" id="data2" name="polosize">
+                <input type="text" class="hidden" id="data3" name="poloprice">
+                <input type="text" class="hidden" id="data4" name="blousequantity">
+                <input type="text" class="hidden" id="data5" name="blousesize">
+                <input type="text" class="hidden" id="data6" name="blouseprice">
+                <input type="text" class="hidden" id="data7" name="slacksquantity">
+                <input type="text" class="hidden" id="data8" name="slackssize">
+                <input type="text" class="hidden" id="data9" name="slacksprice">
+                <input type="text" class="hidden" id="data10" name="peshirtquantity">
+                <input type="text" class="hidden" id="data11" name="peshirtsize">
+                <input type="text" class="hidden" id="data12" name="peshirtprice">
+                <input type="text" class="hidden" id="data13" name="pepantsquantity">
+                <input type="text" class="hidden" id="data14" name="pepantssize">
+                <input type="text" class="hidden" id="data15" name="pepantprice">
+                <input type="text" class="hidden" id="data16" name="lacequantity">
+                <input type="text" class="hidden" id="data17" name="laceprice">
 
-            
+                <button type="submit" class="buy-button" name="btnBuy">BUY</button>
+            </form>
+           
         </section>
     </div>
     <footer>
     </footer>
+    <script defer src="./Homepage.js"></script>
 </body>
 </html>
