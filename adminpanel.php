@@ -11,7 +11,7 @@ if(isset($_POST["btnUpdate1"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -21,7 +21,7 @@ if(isset($_POST["btnUpdate2"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -31,7 +31,7 @@ if(isset($_POST["btnUpdate3"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     } 
 }
@@ -41,7 +41,7 @@ if(isset($_POST["btnUpdate4"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -51,7 +51,7 @@ if(isset($_POST["btnUpdate5"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     } 
 }
@@ -61,7 +61,7 @@ if(isset($_POST["btnUpdate6"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -71,7 +71,7 @@ if(isset($_POST["btnUpdate7"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -81,7 +81,7 @@ if(isset($_POST["btnUpdate8"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     } 
 }
@@ -91,7 +91,7 @@ if(isset($_POST["btnUpdate9"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -101,7 +101,7 @@ if(isset($_POST["btnUpdate10"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     } 
 }
@@ -111,7 +111,7 @@ if(isset($_POST["btnUpdate11"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -121,7 +121,7 @@ if(isset($_POST["btnUpdate12"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -131,7 +131,7 @@ if(isset($_POST["btnUpdate13"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     } 
 }
@@ -141,7 +141,7 @@ if(isset($_POST["btnUpdate14"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -151,7 +151,7 @@ if(isset($_POST["btnUpdate15"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -161,7 +161,7 @@ if(isset($_POST["btnUpdate16"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
     
@@ -172,7 +172,7 @@ if(isset($_POST["btnUpdate17"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
     
@@ -183,7 +183,7 @@ if(isset($_POST["btnUpdate18"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     } 
 }
@@ -193,7 +193,7 @@ if(isset($_POST["btnUpdate19"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -203,7 +203,7 @@ if(isset($_POST["btnUpdate20"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -213,7 +213,7 @@ if(isset($_POST["btnUpdate21"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -223,7 +223,7 @@ if(isset($_POST["btnUpdate22"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -233,7 +233,7 @@ if(isset($_POST["btnUpdate23"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     } 
 }
@@ -243,7 +243,7 @@ if(isset($_POST["btnUpdate24"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     }
 }
@@ -253,7 +253,7 @@ if(isset($_POST["btnUpdate25"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     } 
 }
@@ -263,7 +263,7 @@ if(isset($_POST["btnUpdate26"])){
     $result = mysqli_query($con,$sql);
     if($sql){
         echo"<script>
-        alert('Update Succesfully');
+        alert('Update Successfully');
         </script>";
     } 
 }
@@ -324,23 +324,88 @@ if(isset($_POST["btnUpdate26"])){
             <table class="available">
                 <tr>
                     <td>Small</td>
-                    <td name="psmall"></td>
+                    <td name="psmall">
+                        <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['psmall'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>Medium</td>
-                    <td name="pmedium"></td>
+                    <td name="pmedium">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['pmedium'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>Large</td>
-                    <td name="plarge"></td>
+                    <td name="plarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['plarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>XLarge</td>
-                    <td name="pxlarge"></td>
+                    <td name="pxlarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['pxlarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>XXLarge</td>
-                    <td name="pxxlarge"></td>
+                    <td name="pxxlarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['pxxlarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
             </table>
         </form>
@@ -377,23 +442,88 @@ if(isset($_POST["btnUpdate26"])){
             <table class="available">
                 <tr>
                     <td>Small</td>
-                    <td name="bsmall"></td>
+                    <td name="bsmall">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['bsmall'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>Medium</td>
-                    <td name="bmedium"></td>
+                    <td name="bmedium">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['bmedium'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>Large</td>
-                    <td name="blarge"></td>
+                    <td name="blarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['blarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>XLarge</td>
-                    <td name="bxlarge"></td>
+                    <td name="bxlarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['bxlarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>XXLarge</td>
-                    <td name="bxxlarge"></td>
+                    <td name="bxxlarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['bxxlarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
             </table>
         </form>
@@ -430,23 +560,88 @@ if(isset($_POST["btnUpdate26"])){
             <table class="available">
                 <tr>
                     <td>Small</td>
-                    <td name="ssmall"></td>
+                    <td name="ssmall">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['ssmall'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>Medium</td>
-                    <td name="smedium"></td>
+                    <td name="smedium">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['smedium'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>Large</td>
-                    <td name="slarge"></td>
+                    <td name="slarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['slarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>XLarge</td>
-                    <td name="sxlarge"></td>
+                    <td name="sxlarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['sxlarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>XXLarge</td>
-                    <td name="sxxlarge"></td>
+                    <td name="sxxlarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['sxxlarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
             </table>
         </form>
@@ -483,23 +678,88 @@ if(isset($_POST["btnUpdate26"])){
             <table class="available">
                 <tr>
                     <td>Small</td>
-                    <td name="pssmall"></td>
+                    <td name="pssmall">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['pssmall'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>Medium</td>
-                    <td name="psmedium"></td>
+                    <td name="psmedium">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['psmedium'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>Large</td>
-                    <td name="pslarge"></td>
+                    <td name="pslarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['pslarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>XLarge</td>
-                    <td name="psxlarge"></td>
+                    <td name="psxlarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['psxlarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>XXLarge</td>
-                    <td name="psxxlarge"></td>
+                    <td name="psxxlarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['psxxlarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
             </table>
         </form>
@@ -536,23 +796,88 @@ if(isset($_POST["btnUpdate26"])){
             <table class="available">
                 <tr>
                     <td>Small</td>
-                    <td name="ppsmall"></td>
+                    <td name="ppsmall">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['ppsmall'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>Medium</td>
-                    <td name="ppmedium"></td>
+                    <td name="ppmedium">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['ppmedium'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>Large</td>
-                    <td name="pplarge"></td>
+                    <td name="pplarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['pplarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>XLarge</td>
-                    <td name="ppxlarge"></td>
+                    <td name="ppxlarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['ppxlarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>XXLarge</td>
-                    <td name="ppxxlarge"></td>
+                    <td name="ppxxlarge">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['ppxxlarge'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
             </table>
         </form>
@@ -571,11 +896,23 @@ if(isset($_POST["btnUpdate26"])){
             <table class="available">
                 <tr>
                     <td>Lace</td>
-                    <td name="idlace"></td>
+                    <td name="idlace">
+                    <?php
+                          $sql = "SELECT * FROM productstocks";
+
+                          $result = mysqli_query($con,$sql);    
+                          $resultCheck = mysqli_num_rows($result);
+
+                          if($resultCheck > 0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo $row['idlace'];
+                            }
+                          }
+                        ?>
+                    </td>
                 </tr>
             </table>
         </form>
-
 
     </section>
 

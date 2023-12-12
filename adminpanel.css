@@ -74,6 +74,10 @@ header > h1{
     border: 1px solid black;
 }
 
+.product-section table td{
+    font-weight: bolder;
+}
+
 h2{
     text-align: center;
 }
@@ -138,7 +142,7 @@ tr :first-child{
     box-sizing: border-box;
     border: 1px solid black;
     border-radius: 3px;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 td button{

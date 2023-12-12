@@ -25,12 +25,13 @@ $con = connection();
       
        <h1>Colegio De Montalban Uniform Ordering System</h1>
     </header>
-    <div class="whitebar"></div>
+    <div class="whitebar">
+    <p class="paradashboard">Uniforms & ID Lace</p>
+    </div>
 
     <div class="container">
 
         <section class="product-section">
-            <h2 class="header2">Uniforms & ID Lace</h2>
 
             <section class="product-section2">
 
