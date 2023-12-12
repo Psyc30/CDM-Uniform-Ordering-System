@@ -7,11 +7,13 @@
 body{
     width: 100%;
     height: 100vh;
+    background-color: #FFFFE8;
 }
 
 header{
     display: flex;
     width: 100%;
+    min-width: 1300px;
     height: 150px;
     margin: 0 auto;
     text-align: center;
@@ -34,10 +36,12 @@ header > h1{
 .whitebar{
     display: block;
     width: inherit;
+    min-width: 1300px;
     height: 40px;
     border-bottom: 1px solid black;
     box-sizing: border-box;
     text-align: center;
+    background-color: white;
 }
 
 .paradashboard{
@@ -46,15 +50,116 @@ header > h1{
     font-size: 25px;
 }
 
+.stocks{
+    margin: 50px auto 0;
+    width: 300px;
+    height: 35px;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
 .transaction-section, .product-section{
+    display: flex;
+    margin: 20px auto;
+    height: 400px;
+    width: 90%;
+    min-width: 1300px;
+    border-radius: 5px;
+    background-color: yellow;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+h2{
+    text-align: center;
+}
+
+table{
     display: block;
-    margin: 40px auto;
-    height: 300px;
+    margin: 0 auto;
     width: 100%;
+    border: none;
+}
+
+.size{
+    width: 75px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.pavailable{
+    text-align: center;
+    margin: 5px auto;
+    font-weight:bolder ;
+    background-color: green;
+    width: 140px;
+    color: white;
+    border-radius: 5px;
+}
+
+.fill{
+    height: 88px;
+}
+
+.available td{
+    border: 1px solid black;
+    text-align: center;
+    width: 100px;
+}
+
+td input{
+    width: 60px;
+    height: 20px;
+    text-indent: 20px;
+    background-color: rgb(216, 214, 214);
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
+td input::placeholder{
+    text-indent: 25px;
+    color: black;
+}
+
+tr :first-child{
+    font-weight: 900;
+}
+
+.card
+{
+    display: block;
+    margin: auto;
+    width: 190px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: whitesmoke;
+}
+
+td button{
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid green;
+    color: black;
+    font-weight: bolder;
+    background-color: white;
+}
+
+td button:hover{
+    background-color: green;
+    color: white;
+    border: 1px solid white
 }
 
 footer{
     width: 100%;
+    min-width: 1300px;
     height: 100px;
     background-color: green;
     text-align: center;

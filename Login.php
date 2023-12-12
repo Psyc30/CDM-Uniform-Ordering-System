@@ -7,20 +7,19 @@ $con = connection();
 
 if(isset($_POST["btnLogin"])){
 
-    $fullname = $_POST['fullname'];
+    $studentnumber = $_POST['studentnumber'];
     $Email = $_POST['email'];
 
-    $sqlLogin = "SELECT * FROM `userinfo` WHERE `fullname`='$fullname' AND `email` = '$Email'";
+    $sqlLogin = "SELECT * FROM `userinfo` WHERE `studentnumber`='$studentnumber' AND `email` = '$Email'";
     $resultlogin = mysqli_query($con, $sqlLogin);
     $row = $resultlogin->fetch_assoc();
     $total = $resultlogin->num_rows;
 
     if($total > 0){
-        $_SESSION['user'] = $row['fullname'];
-        $_SESSION['user'] = $row['course'];
         $_SESSION['user'] = $row['studentnumber'];
         $_SESSION['user'];
-        echo header('Location:Homepage.php');
+        echo '<script>alert("Login successful!");</script>';
+        echo '<script>window.location.href = "Homepage.php";</script>';
     }
     else{
         echo "<script> alert('Login Invalid!'); </script>";
@@ -48,7 +47,7 @@ if(isset($_POST["btnLogin"])){
             
                 <img class="cdm-seal" src="./imgs/Login_&_Registration_Imgs/The_Colegio_de_Montalban_Seal.png" alt="Colegio De Montalban Seal">
 
-            <input type="text" id="StudentNumber" placeholder="Fullname" name="fullname">
+            <input type="text" id="StudentNumber" placeholder="Student ID" name="studentnumber">
             <input type="password" id="password"placeholder="Email"  name="email">
             <div class="showpassword">
                 <input type="checkbox" name="agreement" id="toggle" onclick="togglePassword()">

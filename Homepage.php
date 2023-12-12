@@ -5,45 +5,6 @@ if(!isset($_SESSION)){
 include("./connection.php");
 $con = connection();
 
-if(isset($_POST["btnBuy"])){
-
-    $polo = $_POST['poloquantity'];
-    $blouse = $_POST['blousequantity'];
-    $slacks = $_POST['slacksquantity'];
-    $peshirt = $_POST['peshirtquantity'];
-    $pepants = $_POST['pepantsquantity'];
-    $lace = $_POST['lacequantity'];
-    $polosize = $_POST['polosize'];
-    $blousesize = $_POST['blousesize'];
-    $slackssize = $_POST['slackssize'];
-    $peshirtsize = $_POST['peshirtsize'];
-    $pepantssize = $_POST['pepantssize'];
-    $poloprice = $_POST['poloprice'];
-    $blouseprice = $_POST['blouseprice'];
-    $slacksprice = $_POST['slacksprice'];
-    $peshirtprice = $_POST['peshirtprice'];
-    $pepantsprice = $_POST['pepantprice'];
-    $laceprice = $_POST['laceprice'];
-
-    $sql = "INSERT INTO `productorders`(`polo`, `blouse`, `slacks`, `peshirt`, `pepants`, `lace`, `polosize`, `blousesize`, `slackssize`, `peshirtsize`, `pepantssize`, `poloprice`, `blouseprice`, `slacksprice`, `peshirtprice`, `pepantsprice`, `laceprice`) VALUES ('$polo', '$blouse', '$slacks', '$peshirt', '$pepants', '$lace', '$polosize',  '$blousesize', '$slackssize', '$peshirtsize', '$pepantssize', '$poloprice', '$blouseprice', '$slacksprice','$peshirtprice', '$pepantsprice', '$laceprice')";
-    $result = mysqli_query($con,$sql);
-
-    if($sql){
-        "<script>
-         alert('Thank you for your Purchase!');
-         </script>";
-    }
-    else{
-        echo "Transaction Failed!".mysqli_error($con);
-    }
-
-    if(!isset($_SESSION['user'])){
-        header("Location: Login.php");
-        exit();
-    }
-
-}
-
 ?> 
 
 <!DOCTYPE html>
@@ -320,24 +281,6 @@ if(isset($_POST["btnBuy"])){
                         <td class="clearbtn"><button type="button" id="clear6">X</button></td>
                     </tr>
                 </table>
-                <input type="text" class="hidden" id="data1" name="poloquantity">
-                <input type="text" class="hidden" id="data2" name="polosize">
-                <input type="text" class="hidden" id="data3" name="poloprice">
-                <input type="text" class="hidden" id="data4" name="blousequantity">
-                <input type="text" class="hidden" id="data5" name="blousesize">
-                <input type="text" class="hidden" id="data6" name="blouseprice">
-                <input type="text" class="hidden" id="data7" name="slacksquantity">
-                <input type="text" class="hidden" id="data8" name="slackssize">
-                <input type="text" class="hidden" id="data9" name="slacksprice">
-                <input type="text" class="hidden" id="data10" name="peshirtquantity">
-                <input type="text" class="hidden" id="data11" name="peshirtsize">
-                <input type="text" class="hidden" id="data12" name="peshirtprice">
-                <input type="text" class="hidden" id="data13" name="pepantsquantity">
-                <input type="text" class="hidden" id="data14" name="pepantssize">
-                <input type="text" class="hidden" id="data15" name="pepantprice">
-                <input type="text" class="hidden" id="data16" name="lacequantity">
-                <input type="text" class="hidden" id="data17" name="laceprice">
-
                 <button type="submit" class="buy-button" name="btnBuy">BUY</button>
             </form>
            
@@ -345,6 +288,6 @@ if(isset($_POST["btnBuy"])){
     </div>
     <footer>
     </footer>
-    <script defer src="./Homepage.js"></script>
+    <script src="./Homepage.js"></script>
 </body>
 </html>

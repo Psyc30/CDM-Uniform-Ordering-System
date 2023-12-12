@@ -15,11 +15,7 @@ header{
     height: 150px;
     margin: 0 auto;
     text-align: center;
-    /* background-color: #388e3c; */
-    background:linear-gradient(to bottom, rgba(13, 158, 3, 0.623), rgba(255, 255, 255, 0)), url("./imgs/Login_&_Registration_Imgs/CDM_new_building.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: green;
 }
 
 .cdm-seal{
@@ -100,6 +96,7 @@ header > h1{
     width: 160px;
     height: 160px;
     border-radius: 3px;
+    background-color: rgb(216, 214, 214);
 }
 
 .description{
@@ -307,6 +304,7 @@ td > button{
 
 .tablelabels{
     background-color: yellow;
+    font-weight: bolder;
 }
 
 .clear{
