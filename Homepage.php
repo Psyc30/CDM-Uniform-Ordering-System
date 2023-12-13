@@ -5,6 +5,43 @@ if(!isset($_SESSION)){
 include("./connection.php");
 $con = connection();
 
+if(isset($_POST["btnBuy"])){
+
+    $polo_q = $_POST["polo-q"];
+    $polo_s = $_POST["polo-s"];
+    $polo_p = $_POST["polo-p"];
+
+    $blouse_q = $_POST["blouse-q"];
+    $blouse_s = $_POST["blouse-s"];
+    $blouse_p = $_POST["blouse-p"];
+
+    $slacks_q = $_POST["slacks-q"];
+    $slacks_s = $_POST["slacks-s"];
+    $slacks_p = $_POST["slacks-p"];
+
+    $peshirt_q = $_POST["peshirt-q"];
+    $peshirt_s = $_POST["peshirt-s"];
+    $peshirt_p = $_POST["peshirt-p"];
+
+    $pepants_q = $_POST["pepants-q"];
+    $pepants_s = $_POST["pepants-s"];
+    $pepants_p = $_POST["pepants-p"];
+
+    $idlace_q = $_POST["idlace-q"];
+    $idlace_p = $_POST["idlace-p"];
+
+    $sql = "INSERT INTO `productorders`(`polo_q`,`polo_s`,`polo_p`,`blouse_q`,`blouse_s`,`blouse_p`,`slacks_q`,`slacks_s`,`slacks_p`, `peshirt_q`, `peshirt_s`, `peshirt_p`, `pepants_q`, `pepants_s`, `pepants_p`, `idlace_q`, `idlace_p`) VALUES ('$polo_q','$polo_s','$polo_p','$blouse_q','$blouse_s','$blouse_p','$slacks_q','$slacks_s','$slacks_p','$peshirt_q','$peshirt_s','$peshirt_p','$pepants_q','$pepants_s','$pepants_p', '$idlace_q', '$idlace_p' )";
+    $result = mysqli_query($con,$sql);
+
+    if($sql){
+        echo"<script>
+        alert('Thank you for the Purchase!');
+        </script>";
+    }
+    else{
+        echo "Invalid Registration".mysqli_error($con);
+    }
+}
 ?> 
 
 <!DOCTYPE html>
@@ -61,7 +98,7 @@ $con = connection();
                             <p class="price-display" id="price-display1"></p>
                         </div>
 
-                        <button type="button" class="add-cart" id="add-cart1">ADD TO CART</button>
+                        <button type="button" class="add-cart" id="add-cart1" onclick= "polopost()">ADD TO CART</button>
 
                     </form>
                 </div>
@@ -282,13 +319,37 @@ $con = connection();
                         <td class="clearbtn"><button type="button" id="clear6">X</button></td>
                     </tr>
                 </table>
+                <!--POLO CART INPUT-->
+                <input type="text" id="polo-q" name="polo-q">
+                <input type="text" id="polo-s" name="polo-s">
+                <input type="text" id="polo-p" name="polo-p">
+                <!--BLOUSE CART INPUT-->
+                <input type="text" id="blouse-q" name="blouse-q">
+                <input type="text" id="blouse-s" name="blouse-s">
+                <input type="text" id="blouse-p" name="blouse-p">
+                <!--SLACKS CART INPUT-->
+                <input type="text" id="slacks-q" name="slacks-q">
+                <input type="text" id="slacks-s" name="slacks-s">
+                <input type="text" id="slacks-p" name="slacks-p">
+                <!--PE SHIRT CART INPUT-->
+                <input type="text" id="peshirt-q" name="peshirt-q">
+                <input type="text" id="peshirt-s" name="peshirt-s">
+                <input type="text" id="peshirt-p" name="peshirt-p">
+                <!--PE PANTS CART INPUT-->
+                <input type="text" id="pepants-q" name="pepants-q">
+                <input type="text" id="pepants-s" name="pepants-s">
+                <input type="text" id="pepants-p" name="pepants-p">
+                <!--ID LACE CART INPUT-->
+                <input type="text" id="idlace-q" name="idlace-q">
+                <input type="text" id="idlace-p" name="idlace-p">
+
                 <button type="submit" class="buy-button" name="btnBuy">BUY</button>
             </form>
-           
+    
         </section>
     </div>
     <footer>
     </footer>
-    <script src="./Homepage.js"></script>
+    <script defer src="Homepage.js"></script>
 </body>
 </html>

@@ -87,8 +87,8 @@ button:hover{
     .container{
         display: block;
         margin: 0 auto;
-        width: 400px;
-        height: 500px;
+        width: 720px;
+        height: 970px;
         border: 1px solid black;
     }
     
