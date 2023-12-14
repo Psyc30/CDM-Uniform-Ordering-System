@@ -68,7 +68,6 @@ header > h1{
     height: 400px;
     width: 90%;
     min-width: 1300px;
-    border-radius: 5px;
     background-color: yellow;
     box-sizing: border-box;
     border: 1px solid black;
@@ -159,6 +158,38 @@ td button:hover{
     background-color: green;
     color: white;
     border: 1px solid white
+}
+
+.transactionTable{
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+
+}
+
+thead tr{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+thead tr th{  
+    width:200px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.tablebody td{
+    width:200px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.studentcolumn{
+    width: 250px;
 }
 
 footer{

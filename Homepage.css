@@ -329,6 +329,10 @@ td > button{
     transition: transform 0.3s ease;
 }
 
+.transaction input{
+    display: none;
+}
+
 footer{
     width: 100%;
     height: 100px;

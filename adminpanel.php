@@ -918,7 +918,38 @@ if(isset($_POST["btnUpdate26"])){
 
     <p class="stocks">TRANSACTIONS</p>
     <section class="transaction-section">
-        
+        <table class="transactionTable">
+            <thead>
+                <tr>
+                    <th class="studentcolumn">USER <br>Student name</th>
+                    <th>POLO <br>(Q/S/P)</th>
+                    <th>BLOUSE <br>(Q/S/P)</th>
+                    <th>SLACKS <br>(Q/S/P)</th>
+                    <th>PE SHIRT <br>(Q/S/P)</th>
+                    <th>PE PANTS <br>(Q/S/P)</th>
+                    <th>ID LACE <br>(Q/P)</th>
+                    <th>CONTROL <br>(Confirm)</th>
+                </tr>
+            </thead>
+            <?php 
+                $fetchdata = mysqli_query($con,"SELECT * FROM `productorders` ORDER BY `transaction_id` DESC");
+                while($row = mysqli_fetch_assoc($fetchdata)){
+            ?>
+            <tbody class="tablebody">
+                <tr>
+                    <td></td>
+                    <td><?php echo $row['polo_q']; echo" / "; echo $row['polo_s']; echo" / "; echo $row['polo_p'];?></td>
+                    <td><?php echo $row['blouse_q']; echo" / "; echo $row['blouse_s']; echo" / "; echo $row['blouse_p'];?></td>
+                    <td><?php echo $row['slacks_q']; echo" / "; echo $row['slacks_s']; echo" / "; echo $row['slacks_p'];?></td>
+                    <td><?php echo $row['peshirt_q']; echo" / "; echo $row['peshirt_s']; echo" / "; echo $row['peshirt_p'];?></td>
+                    <td><?php echo $row['pepants_q']; echo" / "; echo $row['pepants_s']; echo" / "; echo $row['pepants_p'];?></td>
+                    <td><?php echo $row['idlace_q']; echo" / "; echo $row['idlace_p'];?></td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+            <?php }?>
+        </table>
         
     </section>
 
