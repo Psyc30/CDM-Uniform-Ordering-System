@@ -919,24 +919,21 @@ if(isset($_POST["btnUpdate26"])){
     <p class="stocks">TRANSACTIONS</p>
     <section class="transaction-section">
         <table class="transactionTable">
-            <thead>
-                <tr>
-                    <th class="studentcolumn">USER <br>Student name</th>
-                    <th>POLO <br>(Q/S/P)</th>
-                    <th>BLOUSE <br>(Q/S/P)</th>
-                    <th>SLACKS <br>(Q/S/P)</th>
-                    <th>PE SHIRT <br>(Q/S/P)</th>
-                    <th>PE PANTS <br>(Q/S/P)</th>
-                    <th>ID LACE <br>(Q/P)</th>
-                    <th>CONTROL <br>(Confirm)</th>
+                <tr class="tableheader">
+                    <td>USER <br>Student name</td>
+                    <td>POLO <br>(Q/S/P)</td>
+                    <td>BLOUSE <br>(Q/S/P)</td>
+                    <td>SLACKS <br>(Q/S/P)</td>
+                    <td>PE SHIRT <br>(Q/S/P)</td>
+                    <td>PE PANTS <br>(Q/S/P)</td>
+                    <td>ID LACE <br>(Q/P)</td>
+                    <td>CONTROL <br>(Confirm)</td>
                 </tr>
-            </thead>
-            <?php 
+                <?php 
                 $fetchdata = mysqli_query($con,"SELECT * FROM `productorders` ORDER BY `transaction_id` DESC");
                 while($row = mysqli_fetch_assoc($fetchdata)){
-            ?>
-            <tbody class="tablebody">
-                <tr>
+                  ?>
+                <tr class="datatable">
                     <td></td>
                     <td><?php echo $row['polo_q']; echo" / "; echo $row['polo_s']; echo" / "; echo $row['polo_p'];?></td>
                     <td><?php echo $row['blouse_q']; echo" / "; echo $row['blouse_s']; echo" / "; echo $row['blouse_p'];?></td>
@@ -946,11 +943,8 @@ if(isset($_POST["btnUpdate26"])){
                     <td><?php echo $row['idlace_q']; echo" / "; echo $row['idlace_p'];?></td>
                     <td></td>
                 </tr>
-
-            </tbody>
-            <?php }?>
-        </table>
-        
+                <?php }?>
+        </table> 
     </section>
 
     <section class="sales-section">

@@ -73,6 +73,10 @@ header > h1{
     border: 1px solid black;
 }
 
+.transaction-section{
+    padding-top: 20px;
+}
+
 .product-section table td{
     font-weight: bolder;
 }
@@ -164,32 +168,33 @@ td button:hover{
     display: block;
     margin: 0 auto;
     width: 1200px;
-
+    overflow: scroll;
+    
 }
 
-thead tr{
-    display: block;
-    margin: 0 auto;
-}
-
-
-
-thead tr th{  
-    width:200px;
+.tableheader td{
+    border: 1px solid black;
     height: 50px;
     background-color: white;
-    border: 1px solid black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-.tablebody td{
-    width:200px;
-    height: 50px;
-    background-color: white;
-    border: 1px solid black;
+.transactionTable tr{
+    background-color:white;
 }
 
-.studentcolumn{
-    width: 250px;
+.transactionTable tr td{
+    width: 150px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.datatable td{
+    height: 25px;
+    border: 1px solid black;
 }
 
 footer{
