@@ -71,7 +71,11 @@ if(isset($_POST["btnSignUp"])){
         </form>
     </div>
 
-    <footer></footer>
+    <footer>
+        <div class="footer">
+                <p class="Copyright">Copyright © 2023 CDM Uniform Ordering System</p>
+        </div>
+    </footer>
     <script src="./Registration.js"></script>
 </body>
 </html>

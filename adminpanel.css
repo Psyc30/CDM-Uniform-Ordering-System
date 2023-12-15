@@ -173,15 +173,21 @@ td button:hover{
 }
 
 .tableheader td{
-    border: 1px solid black;
+
+    border: 1px solid green;
     height: 50px;
-    background-color: white;
+    color: white;
+    background-color: green;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
+
+.transactionTable{
+    background-color: white;
+}
 .transactionTable tr{
     background-color:white;
 }
@@ -194,7 +200,7 @@ td button:hover{
 
 .datatable td{
     height: 25px;
-    border: 1px solid black;
+    border: 1px solid gray;
 }
 
 footer{
@@ -203,4 +209,16 @@ footer{
     height: 100px;
     background-color: green;
     text-align: center;
+}
+
+.footer{
+    padding: 12px 0 0;
+    text-align: center;
+    color: white;
+}
+
+.footer p{
+    display: block;
+    margin: 30px 0 0;
+    font-size: 17px;
 }

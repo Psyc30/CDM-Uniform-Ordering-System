@@ -1,3 +1,13 @@
+<?php 
+if(!isset($_SESSION)){
+    session_start();
+}
+include("./connection.php");
+$con = connection();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,9 +30,28 @@
             <tbody>
                 <tr>
                     <td>Polo</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><?php
+                    if($_SERVER["REQUEST_METHOD"] == "POST"){
+                        $polo_q = $_POST['polo-q'];
+                        echo  $polo_q;
+                    }
+                    ?></td>
+                    <td>
+                    <?php
+                    if($_SERVER["REQUEST_METHOD"] == "POST"){
+                        $polo_q = $_POST['polo-q'];
+                        echo  $polo_q;
+                    }
+                    ?>
+                    </td>
+                    <td id="pprice">
+                    <?php
+                    if($_SERVER["REQUEST_METHOD"] == "POST"){
+                        $polo_q = $_POST['polo-q'];
+                        echo  $polo_q;
+                    }
+                    ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>Blouse</td>
@@ -64,6 +93,6 @@
         <button onclick="window.print()">Save</button>
     </div>
 
-    
+    <script src="./Homepage.js"></script>
 </body>
 </html>

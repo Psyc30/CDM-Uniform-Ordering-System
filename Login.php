@@ -69,7 +69,11 @@ if(isset($_POST["btnLogin"])){
 
     </div>
 
-    <footer></footer>
+    <footer>
+        <div class="footer">
+                <p class="Copyright">Copyright © 2023 CDM Uniform Ordering System</p>
+        </div>
+    </footer>
     <script src="./Login.js"></script>
 </body>
 </html>

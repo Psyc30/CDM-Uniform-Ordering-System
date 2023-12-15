@@ -46,6 +46,7 @@ document.getElementById("add-cart1").onclick = function(){
     document.getElementById("polo-quanti").innerHTML = Pquanti;
     document.getElementById("polo-price").innerHTML = Pnewprice;
     document.getElementById("polo-size").innerHTML = Psize;
+    document.getElementById("pquan").innerHTML = polo_q;
 }
 
 document.getElementById("clear1").onclick = function(){
@@ -60,8 +61,6 @@ document.getElementById("clear1").onclick = function(){
     document.getElementById("polo-quanti").innerHTML = "";
     document.getElementById("polo-price").innerHTML = "";
     document.getElementById("polo-size").innerHTML = "";
-
-
 }
 
 // CDM BLOUSE

@@ -920,7 +920,8 @@ if(isset($_POST["btnUpdate26"])){
     <section class="transaction-section">
         <table class="transactionTable">
                 <tr class="tableheader">
-                    <td>USER <br>Student name</td>
+                    <td class="userroww">USER <br>Student name</td>
+                    <td class="idrow">ID</td>
                     <td>POLO <br>(Q/S/P)</td>
                     <td>BLOUSE <br>(Q/S/P)</td>
                     <td>SLACKS <br>(Q/S/P)</td>
@@ -935,13 +936,14 @@ if(isset($_POST["btnUpdate26"])){
                   ?>
                 <tr class="datatable">
                     <td></td>
+                    <td><?php echo $row['transaction_id']?></td>
                     <td><?php echo $row['polo_q']; echo" / "; echo $row['polo_s']; echo" / "; echo $row['polo_p'];?></td>
                     <td><?php echo $row['blouse_q']; echo" / "; echo $row['blouse_s']; echo" / "; echo $row['blouse_p'];?></td>
                     <td><?php echo $row['slacks_q']; echo" / "; echo $row['slacks_s']; echo" / "; echo $row['slacks_p'];?></td>
                     <td><?php echo $row['peshirt_q']; echo" / "; echo $row['peshirt_s']; echo" / "; echo $row['peshirt_p'];?></td>
                     <td><?php echo $row['pepants_q']; echo" / "; echo $row['pepants_s']; echo" / "; echo $row['pepants_p'];?></td>
                     <td><?php echo $row['idlace_q']; echo" / "; echo $row['idlace_p'];?></td>
-                    <td></td>
+                    <td><button></button></td>
                 </tr>
                 <?php }?>
         </table> 
@@ -950,6 +952,10 @@ if(isset($_POST["btnUpdate26"])){
     <section class="sales-section">
 
     </section>
-    <footer></footer>
+    <footer>
+        <div class="footer">
+                <p class="Copyright">Copyright © 2023 CDM Uniform Ordering System</p>
+        </div>
+    </footer>
 </body>
 </html>

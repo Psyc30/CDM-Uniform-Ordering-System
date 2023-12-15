@@ -36,12 +36,15 @@ if(isset($_POST["btnBuy"])){
     if($sql){
         echo"<script>
         alert('Thank you for the Purchase!')
-        window.location = 'UserReceipt.html';
+        window.location = 'UserReceipt.php';
         </script>";
     }
     else{
         echo "Invalid Registration".mysqli_error($con);
     }
+
+    $id = 1;
+
 }
 ?> 
 
@@ -322,36 +325,67 @@ if(isset($_POST["btnBuy"])){
                 </table>
                 <div class="transaction">
                     <!--POLO CART INPUT-->
-                    <input type="text" id="polo-q" name="polo-q">
+                    <input type="number" id="polo-q" name="polo-q">
                     <input type="text" id="polo-s" name="polo-s">
-                    <input type="text" id="polo-p" name="polo-p">
+                    <input type="number" id="polo-p" name="polo-p">
                     <!--BLOUSE CART INPUT-->
-                    <input type="text" id="blouse-q" name="blouse-q">
+                    <input type="number" id="blouse-q" name="blouse-q">
                     <input type="text" id="blouse-s" name="blouse-s">
-                    <input type="text" id="blouse-p" name="blouse-p">
+                    <input type="number" id="blouse-p" name="blouse-p">
                     <!--SLACKS CART INPUT-->
-                    <input type="text" id="slacks-q" name="slacks-q">
+                    <input type="number" id="slacks-q" name="slacks-q">
                     <input type="text" id="slacks-s" name="slacks-s">
-                    <input type="text" id="slacks-p" name="slacks-p">
+                    <input type="number" id="slacks-p" name="slacks-p">
                     <!--PE SHIRT CART INPUT-->
-                    <input type="text" id="peshirt-q" name="peshirt-q">
+                    <input type="number" id="peshirt-q" name="peshirt-q">
                     <input type="text" id="peshirt-s" name="peshirt-s">
-                    <input type="text" id="peshirt-p" name="peshirt-p">
+                    <input type="number" id="peshirt-p" name="peshirt-p">
                     <!--PE PANTS CART INPUT-->
-                    <input type="text" id="pepants-q" name="pepants-q">
+                    <input type="number" id="pepants-q" name="pepants-q">
                     <input type="text" id="pepants-s" name="pepants-s">
-                    <input type="text" id="pepants-p" name="pepants-p">
+                    <input type="number" id="pepants-p" name="pepants-p">
                     <!--ID LACE CART INPUT-->
-                    <input type="text" id="idlace-q" name="idlace-q">
-                    <input type="text" id="idlace-p" name="idlace-p">
+                    <input type="number" id="idlace-q" name="idlace-q">
+                    <input type="number" id="idlace-p" name="idlace-p">
                 </div>
 
                 <button type="submit" class="buy-button" name="btnBuy">BUY</button>
+            </form>
+
+            <form action="UserReceipt.php">
+            <div class="transaction">
+                    <!--POLO CART INPUT-->
+                    <input type="number" id="polo-q" name="polo-q">
+                    <input type="text" id="polo-s" name="polo-s">
+                    <input type="number" id="polo-p" name="polo-p">
+                    <!--BLOUSE CART INPUT-->
+                    <input type="number" id="blouse-q" name="blouse-q">
+                    <input type="text" id="blouse-s" name="blouse-s">
+                    <input type="number" id="blouse-p" name="blouse-p">
+                    <!--SLACKS CART INPUT-->
+                    <input type="number" id="slacks-q" name="slacks-q">
+                    <input type="text" id="slacks-s" name="slacks-s">
+                    <input type="number" id="slacks-p" name="slacks-p">
+                    <!--PE SHIRT CART INPUT-->
+                    <input type="number" id="peshirt-q" name="peshirt-q">
+                    <input type="text" id="peshirt-s" name="peshirt-s">
+                    <input type="number" id="peshirt-p" name="peshirt-p">
+                    <!--PE PANTS CART INPUT-->
+                    <input type="number" id="pepants-q" name="pepants-q">
+                    <input type="text" id="pepants-s" name="pepants-s">
+                    <input type="number" id="pepants-p" name="pepants-p">
+                    <!--ID LACE CART INPUT-->
+                    <input type="number" id="idlace-q" name="idlace-q">
+                    <input type="number" id="idlace-p" name="idlace-p">
+                </div>
             </form>
     
         </section>
     </div>
     <footer>
+        <div class="footer">
+            <p class="Copyright">Copyright © 2023 CDM Uniform Ordering System</p>
+        </div>
     </footer>
     <script defer src="Homepage.js"></script>
 </body>
